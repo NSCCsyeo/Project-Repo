@@ -1,0 +1,18 @@
+# W0473939 scripts made in powershell
+# Mod (%)
+# Powershell script that will ask the user for two numbers, divide them, and give the modulo
+# Ask the user for their first number
+$firstnumber = Read-Host "Enter the first number"
+
+# Ask the user for their second number
+$secondnumber = Read-Host "Enter the second number"
+
+# Convert the input strings to numbers
+$firstnumber = [double]::Parse($firstnumber)
+$secondnumber = [double]::Parse($secondnumber)
+
+# Divide the two numbers and get the remainder
+[double]$remainder = $firstnumber % $secondnumber
+
+# Display the result
+Write-Host "The quotient of $firstnumber divided by $secondnumber has a remainder of $remainder"

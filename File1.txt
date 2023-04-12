@@ -1,0 +1,17 @@
+# W0473939 scripts made in powershell
+# Subtraction (-)
+# Script that will ask the user for two numbers and give the answer of those two numbers added together
+# Ask the user for their first number
+$firstnumber = Read-Host "Enter the first number"
+# Ask the user for their second number
+$secondnumber = Read-Host "Enter the second number"
+
+# Convert the input strings to numbers
+$firstnumber = [double]::Parse($firstnumber)
+$secondnumber = [double]::Parse($secondnumber)
+
+# Add the two numbers together
+$sumofbothnumbers = $firstnumber + $secondnumber
+
+# Display the
+Write-Host "The sum of $firstnumber and $secondnumber is $sumofbothnumbers."
