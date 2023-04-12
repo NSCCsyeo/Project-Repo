@@ -1,0 +1,57 @@
+# All code bases will be PowerShell.
+ #W0183324: Created basic menu
+
+ #
+ function MaxNum {
+
+ }
+
+ #
+ function AvgNum {
+
+ }
+
+ #W0183324: Created Function Option 3-3
+ function PowNum {
+     $Num1 = Read-Host "Write a base number to be powered."
+     $Num2 = Read-Host "Write a value of power"
+     $num1 = [double]$num1
+     $num2 = [double]$num2
+     $Result = [Math]::Pow($Num1 , $Num2)
+     Write-Host "$Num1 to power $Num2 = $Result"
+ }
+
+ function Show-Menu3 {
+
+     Write-Host "Select an option:"
+     Write-Host "1. Maximum Number"
+     Write-Host "2. Average Number"
+     Write-Host "3. Power a Number"
+     Write-Host "Q. Quit"
+ }
+
+ do {
+     Show-Menu3
+     $choice = Read-Host "Enter your choice"
+     switch ($choice) {
+         "1" {
+             Write-Host "Finding a Bigger Number between two"
+             MaxNum
+         }
+         "2" {
+             Write-Host "Finding Average Number"
+             AvgNum
+         }
+         "3" {
+             Write-Host "Number to Power"
+             PowNum
+         }
+         "Q" {
+             Write-Host "Exiting..."
+             break
+         }
+         default {
+             Write-Host "Invalid selection. Please try again."
+         }
+     }
+ } while ($choice -ne "Q")
