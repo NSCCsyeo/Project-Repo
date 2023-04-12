@@ -1,3 +1,4 @@
+Function Add-Numbers{
 # W0473939 scripts made in powershell
 # Subtraction (-)
 # Script that will ask the user for two numbers and give the answer of those two numbers added together
@@ -15,3 +16,4 @@ $sumofbothnumbers = $firstnumber + $secondnumber
 
 # Display the
 Write-Host "The sum of $firstnumber and $secondnumber is $sumofbothnumbers."
+}

@@ -1,3 +1,4 @@
+Function Modulo-Division{
 # W0473939 scripts made in powershell
 # Mod (%)
 # Powershell script that will ask the user for two numbers, divide them, and give the modulo
@@ -16,3 +17,4 @@ $secondnumber = [double]::Parse($secondnumber)
 
 # Display the result
 Write-Host "The quotient of $firstnumber divided by $secondnumber has a remainder of $remainder"
+}
