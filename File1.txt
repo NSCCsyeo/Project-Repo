@@ -1,4 +1,4 @@
-Function Add-Numbers{
+Function Subtract-Numbers{
 # W0473939 scripts made in powershell
 # Subtraction (-)
 # Script that will ask the user for a number and then ask the user for second number then subtract the two numbers and give the difference 
