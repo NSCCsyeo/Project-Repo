@@ -1,7 +1,7 @@
 Function Add-Numbers{
 # W0473939 scripts made in powershell
 # Subtraction (-)
-# Script that will ask the user for two numbers and give the answer of those two numbers added together
+# Script that will ask the user for a number and then ask the user for second number then subtract the two numbers and give the difference 
 # Ask the user for their first number
 $firstnumber = Read-Host "Enter the first number"
 # Ask the user for their second number
@@ -11,9 +11,9 @@ $secondnumber = Read-Host "Enter the second number"
 $firstnumber = [double]::Parse($firstnumber)
 $secondnumber = [double]::Parse($secondnumber)
 
-# Add the two numbers together
-$sumofbothnumbers = $firstnumber + $secondnumber
+# Subtract the two numbers together
+$difference = $firstnumber - $secondnumber
 
-# Display the
-Write-Host "The sum of $firstnumber and $secondnumber is $sumofbothnumbers."
+# Display the answer
+Write-Host "$firstnumber - $secondnumber = $difference"
 }
