@@ -18,6 +18,8 @@ April 15, 2023
 
 1. Evan Longley Built functions for addition, division, and finding maximum value (Math.max)
 
+2. Kaleb Oates fixed a script for Substration.
+
 April 12, 2023
 
 1. Sung Su Yeo Built a basic menu and functions for Multiplication, Finding minimum value (Math.min), and Power the value A to B.
