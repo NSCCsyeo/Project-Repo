@@ -3,7 +3,7 @@
 # Member: 
 Sung Su Yeo / W0183324 (Admin)
 Kaleb Oates Bursey / W0473939
-Evan LongLey / W0473011
+Evan Longley / W0473011
 
 # Description: Each scripts will call a menu to type 2 or more numbers and calculate based on the numbers.
 
