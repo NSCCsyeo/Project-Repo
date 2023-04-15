@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #"W0473011"
 function Division {
     # Asks users to type two numbers to divide.
@@ -40,3 +41,62 @@ $secondnumber = [double]::Parse($secondnumber)
 Write-Host "The quotient of $firstnumber divided by $secondnumber has a remainder of $remainder"
 }
 >>>>>>> feature/w0473939
+=======
+# All code bases will be PowerShell.
+ #W0183324: Created basic menu
+
+ #
+ function Division {
+
+ }
+
+ #
+ function Modulus {
+
+ }
+
+ #W0183324: Created Function Option 2-3
+ function MinNum {
+     $Num1 = Read-Host "Write a first number to compare."
+     $Num2 = Read-Host "Write another number to compare."
+     $num1 = [double]$num1
+     $num2 = [double]$num2
+     $Result = [Math]::Min($Num1 , $Num2)
+     Write-Host "The smaller number between $Num1 and $Num2 is $Result"
+ }
+
+ function Show-Menu2 {
+
+     Write-Host "Select an option:"
+     Write-Host "1. Divide (/)"
+     Write-Host "2. Modulus Division (%)"
+     Write-Host "3. Minimum Number"
+     Write-Host "Q. Quit"
+ }
+
+ do {
+     Show-Menu2
+     $choice = Read-Host "Enter your choice"
+     switch ($choice) {
+         "1" {
+             Write-Host "Dividing Numbers"
+             Division
+         }
+         "2" {
+             Write-Host "Finding leftover Value after Division"
+             Modulus
+         }
+         "3" {
+             Write-Host "Finding a smaller Number between two"
+             MinNum
+         }
+         "Q" {
+             Write-Host "Exiting..."
+             break
+         }
+         default {
+             Write-Host "Invalid selection. Please try again."
+         }
+     }
+ } while ($choice -ne "Q")
+>>>>>>> feature/W0183324
