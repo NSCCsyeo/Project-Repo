@@ -1,0 +1,19 @@
+#"W0473011"
+function Division {
+    # Asks users to type two numbers to divide.
+    $Num1 = Read-Host "Write a number to divide"
+    $Num2 = Read-Host "Write another number to divide"
+    
+    # Convert data type from text to numbers.
+    $Num1 = [double]$Num1
+    $Num2 = [double]$Num2
+    
+    # Check if second number is zero to avoid division by zero error.
+    if ($Num2 -eq 0) {
+        Write-Host "Cannot divide by zero. Please enter a non-zero number."
+    }
+    else {
+        $Result = $Num1 / $Num2
+        Write-Host "$Num1 divided by $Num2 = $Result"
+    }
+}

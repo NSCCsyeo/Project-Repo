@@ -1,0 +1,11 @@
+#"W0473011"
+function Adding{
+    # Asks users to type two numbers to add.
+     $Num1 = Read-Host "Write a number to add"
+     $Num2 = Read-Host "Write another number to add"
+     # Convert data type from text to numbers.
+     $num1 = [double]$num1
+     $num2 = [double]$num2
+     $Result = $Num1 + $Num2
+     Write-Host "$Num1 + $Num2 = $Result"
+}
