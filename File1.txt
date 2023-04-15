@@ -11,7 +11,7 @@ $secondnumber = Read-Host "Enter the second number"
 $firstnumber = [double]::Parse($firstnumber)
 $secondnumber = [double]::Parse($secondnumber)
 
-# Subtract the two numbers together
+# Subtract the two numbers 
 $difference = $firstnumber - $secondnumber
 
 # Display the answer
