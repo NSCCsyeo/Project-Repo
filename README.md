@@ -1,9 +1,9 @@
 #NETW 2710 GitHub Group Project - Project-Repo
 
 # Member: 
-Sung Su Yeo / W0183324 (Admin)
-Kaleb Oates Bursey / W0473939
-Evan Longley / W0473011
+#Sung Su Yeo / W0183324 (Admin)
+#Kaleb Oates Bursey / W0473939
+#Evan Longley / W0473011
 
 # Description: Each scripts will call a menu to type 2 or more numbers and calculate based on the numbers.
 
