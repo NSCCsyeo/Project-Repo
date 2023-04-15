@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function MaxNum {
     # Asks users to type two numbers to compare.
      $Num1 = Read-Host "Write a first number to compare."
@@ -8,3 +9,28 @@ function MaxNum {
      $Result = [Math]::Max($Num1 , $Num2)
      Write-Host "The bigger number between $Num1 and $Num2 is $Result"
  }
+=======
+Function Calculate-Average{
+# W0473939 scripts made in powershell
+# Avg-Math.avg()
+# PowerShell script that will ask the user for six 3-digit numbers and calculate the average of all the numbers given
+# Create an intializer variable to hold onto the total of the numbers
+$sum = 0
+
+# Prompt the user for six 3-digit numbers
+for ($i = 1; $i -le 6; $i++) {
+    do {
+        $number = Read-Host "Enter number $i (must be a 3-digit number)"
+    } until ($number -match '^\d{3}$')
+# ↑ Loop until a 3-digit number is enterered ↑
+
+    $sum += [int]$number  # Convert the string to an integer and add it to the sum
+}
+
+# Get the total the average for the numbers
+$average = $sum / 6
+
+# Display the result
+Write-Host "The average of the six numbers is $average."
+}
+>>>>>>> feature/w0473939
