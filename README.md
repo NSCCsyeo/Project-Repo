@@ -20,6 +20,7 @@ April 15, 2023
 
 2. Kaleb Oates fixed a script for Substration.
 
+3. Sung Su Yeo merged, polished, and pushed scripts to the main. 
 April 12, 2023
 
 1. Sung Su Yeo Built a basic menu and functions for Multiplication, Finding minimum value (Math.min), and Power the value A to B.
